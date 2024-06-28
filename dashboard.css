@@ -1,0 +1,789 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 7px;
+    background-color: rgb(240, 242, 245);
+
+}
+
+body::-webkit-scrollbar:hover {
+    width: 7px;
+    border-radius: 7px;
+    background-color: rgb(241, 243, 246);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 7px;
+}
+
+
+/* HEADER WHERE THE LOGINS ARE  */
+
+header {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(100, 100, 100, 0.2);
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    position: relative;
+    left: 5%;
+    top: 10px;
+    float: left;
+}
+
+header input {
+    font-size: small;
+    font-weight: bold;
+    width: 25%;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 30px;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    left: 10%;
+    top: 10px;
+    float: left;
+
+}
+
+header button.AI {
+    width: 170px;
+    height: 35px;
+    background-color: rgba(49, 79, 246, 0.2);
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    position: relative;
+    right: 7%;
+    box-shadow: 0px 0px 0px 0px rgba(124, 124, 124, 0);
+    top: 7.5px;
+}
+
+header button.AI img {
+    width: 25px;
+    left: 0px;
+    top: 2px;
+    float: none;
+}
+
+header button.AI span {
+    position: relative;
+    top: -5px;
+}
+
+header button.notice {
+    border: 1px solid rgba(240, 240, 240, 0.3);
+    float: right;
+    background-color: rgba(255, 255, 255, 0);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    right: 5%;
+    border-radius: 5px;
+    /* box-shadow: 0px 5px 10px 0px rgba(124, 124, 124, 0.1); */
+}
+
+header button i {
+    font-size: xx-large;
+}
+
+header nav.container {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    right: 3%;
+    top: 5px;
+
+}
+
+header nav.container nav.image {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    left: 2px;
+    top: 1px;
+}
+
+header nav.container nav.image img {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 2px;
+}
+
+header nav.container nav.content {
+    width: 80px;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: 5px;
+
+}
+
+header nav.container nav.content h4 {
+    font-size: small;
+    font-weight: bold;
+}
+
+header nav.container nav.content h4 span {
+    font-size: x-small;
+    font-weight: normal;
+    color: black;
+    position: relative;
+    top: -5px;
+
+}
+
+header nav.container button {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: none;
+    width: auto;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    position: relative;
+    left: 3px;
+    top: 10px;
+}
+
+header nav.container button i {
+    font-size: small;
+    font-weight: bold;
+}
+
+
+
+
+
+/* menu on the left hand side  */
+
+
+
+div.menu {
+    width: 250px;
+    height: 1100px;
+    background-color: white;
+    border: none;
+    list-style: none;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(100, 100, 100, 0.2);
+    border-radius: 5px;
+    float: left;
+}
+
+div.menu li:first-child {
+    margin-top: 50px;
+}
+
+div.menu li:last-child {
+    margin-top: 70px;
+}
+
+div.menu li {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    height: 45px;
+    overflow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+
+}
+
+div.menu li button {
+    background-color: white;
+    border: none;
+    height: auto;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.6);
+    transition: background-color 1s, color 1s, transform 3s;
+}
+
+div.menu li button i {
+    font-size: medium;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+div.menu li.active button {
+    background-color: rgb(49, 79, 246, 1);
+    color: white;
+}
+
+div.menu li button:hover {
+    background-color: rgb(49, 79, 246, 1);
+    color: white;
+}
+
+
+
+/*      line body  */
+
+
+div.body {
+    width: 81%;
+    height: 1100px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    float: left;
+    /* background-color: rgba(250, 250, 250, 0.5); */
+    z-index: 1;
+
+}
+
+div.body h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+div.body p {
+    font-size: x-small;
+    font-weight: normal;
+    position: relative;
+    left: 5%;
+    top: -10px;
+    width: 50%;
+}
+
+div.body button.add {
+    float: right;
+    font-size: small;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: #314FF6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: 20px;
+    right: 5%;
+}
+
+
+
+/* line of the list of item  */
+
+
+
+div.list {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    top: 5px;
+}
+
+div.list nav {
+    width: 14%;
+    height: 100px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 14px 0px rgba(125, 125, 125, 0.3);
+    margin-right: 1%;
+    float: left;
+    position: relative;
+    left: 5%;
+}
+
+div.list nav h4 {
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+    left: 10%;
+    margin: -0px 0px -5px;
+    top: 14px;
+
+}
+
+div.list nav span {
+    font-size: x-small;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    left: 10%;
+    top: 14px;
+
+}
+
+div.list nav img {
+    width: 20px;
+    position: relative;
+    left: 10%;
+    top: 20px;
+}
+
+
+
+
+/* next line about the chart of the device */
+
+
+
+div.about1 {
+    width: 58%;
+    height: 350px;
+    position: relative;
+    left: 5%;
+    box-shadow: 1px 10px 20px 4px rgba(125, 125, 125, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 50px;
+}
+
+div.about1 h3 {
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    float: left;
+    width: 60%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+div.about1 button {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    width: 80px;
+    height: 25px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.4);
+    float: right;
+    position: relative;
+    right: 5%;text-align: left;
+    padding: 0px 10px ;
+}
+
+div.about1 p {
+    position: relative;
+    left: 5%;
+    font-size: x-small;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    float: left;
+    display: block;
+    width: 100%;
+
+}
+/* div.about1 div{
+    background-image: url(./image/Group\ 1000002330.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 90%;
+    height: auto;
+    background-size: 650px;
+    background-position-x: 100px;
+} */
+div.about1 div.chart {
+    width: 90%;
+    height: auto;
+    position: relative;
+    left: 5%;
+    background-image: url(./image/Group\ 1000002329.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    top: 0px;
+    background-size: 630px;
+    background-position-y: 178px;
+}
+
+div.about1 div.chart img {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: auto;
+
+}
+
+                /* the next device by the right hand side  */
+
+
+
+div.about2{
+    width: 30%;
+    height: 165px;
+    position: relative;
+    right: 5%;
+    float: right;
+    box-shadow: 4px 10px 20px 4px rgba(125, 125, 125, 0.3);
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+div.about2 h3{
+    font-size: medium;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    float: left;
+    width: 70%;
+}
+
+div.about2 button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: x-small;
+    font-weight: normal;
+    color: #314FF6;
+    text-decoration: solid;
+    float: right;
+    margin-top: 25px;
+    position: relative;
+    right: 5%;
+
+}
+
+div.about2 div.content{
+    width: 100%;
+    height: 65px;
+    overflow: none;
+    float: none;
+    display: block;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+div.about2 div.content span{
+    display: block;
+    margin: 0;
+    font-size: x-small;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+div.about2 nav{
+    width: 100%;
+    height: 30px;
+    border: none;
+    text-align: center;
+}
+div.about2 nav button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-size: x-small;
+    font-weight: bold;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    float: none;
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+div.about2 nav button h5{
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(49, 79, 246, 1);
+    margin: 2px 5px -10px ;
+    float: left;
+}
+div.about2 nav button h5.desk{
+    background-color: rgba(15, 218, 72, 1);
+}
+
+
+
+
+                 /* adjustment of the div below  */
+
+
+
+div.about1 div.container{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    left: 5%;
+}
+
+
+div.about1 div.container div.image{
+    width: 50%;
+    height: 200px;
+    position: relative;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px;
+}
+div.about1 div.container div.image img{
+    width: 100%;
+    margin: 0;
+}
+
+div.about1 div.container div.content{
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 15%;
+    overflow: hidden;
+    top: -50px;
+}
+div.about1 div.container div.content h3{
+    font-size: large;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%
+}
+div.about1 div.container div.content p{
+    width: 74%;
+    text-align: center;
+    font-size: x-small;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+    left: 13%;
+}
+div.about1 div.container div.content button{
+    width: 49%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(49, 79, 246, 1);
+    border-radius: 5px;
+    font-size: small;
+    font-weight: normal;
+    color: #314FF6;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    margin-left: 1%;
+    transition: background-color 1s, color 1s, transform 5s;
+    float: left;
+}
+div.about1 div.container div.content button:hover{
+    background-color: #314FF6;
+    color: white;
+}
+
+
+
+
+
+
+/* we done now i want to be showing the display of the button around 
+first we start with the welcome overlay  */
+
+
+div.overlap{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 1100px;
+    z-index: 2;
+    box-shadow: 0px 10px 20px 0px rgba(125, 125, 125, 0.3);
+   position: absolute;
+    overflow: hidden;
+    display: none;
+}
+div.overlap div.hello{
+    width: 48%;
+    height: 320px;
+    background-color: white;
+    position:relative;
+    top: 250px;
+    left: 26%;
+    border-radius: 20px;
+    text-align: center;
+    float: none;
+    display: none;
+}
+div.overlap div.hello h1{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+
+}
+div.overlap div.hello p{
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    width: 70%;
+    position: relative;
+    left: 15%;
+    line-height: 25px;
+}
+div.overlap div.hello button{
+    background-color: rgba(0, 0, 0, 0);
+    color: #314FF6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid #314FF6;
+    transition: background-color 1s, color 1s, transform 5s;
+}
+div.overlap div.hello button:hover{
+    background-color: #314FF6;
+    color: white;
+}
+
+
+
+                /* line add device  */
+
+
+ div.overlap div.device{
+    width: 48%;
+    height: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+    left: 26%;
+    display: none;
+}
+div.overlap div.device h2{
+    width: 70%;
+    position: relative;
+    left: 5%;
+    height: auto;
+    margin-top: 30px;
+    float: left;
+    font-size: x-large;
+    font-weight: bolder;
+}
+div.overlap div.device  button{
+    width: 35px;
+    height: 35px;
+    float: right;
+    position: relative;
+    right: 5%;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border: none;
+    border-radius: 5px;
+}
+ div.overlap div.device  form{
+    width: 90%;
+    height: auto;
+    position: relative;
+    left: 5%;
+    text-align: center;
+}
+div.overlap div.device form select{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white ;
+    border: none;
+    box-shadow: 2px 7px 14px 4px rgba(125, 125, 125, 0.1) ;
+    font-weight: bolder;
+    padding: 0px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 10px;
+}
+div.overlap div.device form select {
+    background: url("./image/material-symbols_arrow-forward-ios-rounded.svg") no-repeat right 15px top 13px; /* Adjust positioning here */
+    
+}
+div.overlap div.device form select option{
+    font-weight: bolder;
+    border: none;
+}
+div.overlap div.device form input{
+    width: 92%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white ;
+    border: none;
+    box-shadow: 2px 7px 14px 4px rgba(125, 125, 125, 0.1) ;
+    font-weight: bolder;
+    padding: 0px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+div.overlap div.device form label{
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+}
+div.overlap div.device form button{
+    padding: 15px 25px;
+    background-color: #314FF6;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    float: none;
+    text-align: center;
+    width: auto;
+    height: auto;
+    right: 0px;
+    left: 0px;
+}
+
+/* div.body div#overlap div#device{
+    display: none;
+}
+div.body div#overlap{
+    display: none;
+} */

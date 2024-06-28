@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./active_dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./image/Frame 854.png" alt="">
+        <input type="text" name="text" id="" placeholder="Search">
+        <nav class="container">
+            <nav class="image"><img src="./image/Ellipse 200.png" alt=""></nav>
+            <nav class="content">
+                <h4>Christian<br>
+                    <span>Admin</span>
+                </h4>
+            </nav>
+
+
+            <button>
+                <i class="fa fa-angle-down"></i>
+            </button>
+        </nav>
+        <button class="notice">
+            <i class="fa fa-bell-o">
+            </i></button>
+        <button class="AI">
+            <img src="./image/eos-icons_ai.png" alt="">
+            <span> Ask Our Ai</span>
+        </button>
+    </header>
+
+
+    <!-- menu left hand side  -->
+
+
+
+    <div class="menu">
+        <li class="active"><a href="./dashboard.html"><button><i class="fa fa-th-large"></i> Dashboard</button></a></li>
+        <li><a href="./dash_device_inventory.html"><button><i class="fa fa-arrow-circle-o-up"></i> Device
+                    Inventory</button></a></li>
+        <li><a href="./staff_members.html"><button><i class="fa fa-user"></i> Staff Members</button></a></li>
+        <li><a href="./subadmin.html"><button><i class="fa fa-user-md"></i> Sub Admin</button></a></li>
+        <li><a href="./dash_report.html"><button><i class="fa fa-bar-chart"></i> Reports</button></a></li>
+        <li><a href=""><button><i class="fa fa-cog"></i> Settings</button></a></li>
+        <li><a href="./dash_help.html"><button><i class="fa fa-question-circle"></i> Help & Support</button></a></li>
+        <li><a href="./maintenance.html"><button><i class="fa fa-sliders"></i>Maintenance</button></a></li>
+        <li><button><i class="fa fa-toggle-off"></i> Light Mode</button></li>
+        <li><a href="./index.html"><button><i class="fa fa-sign-out"></i> Log Out</button></a></li>
+    </div>
+
+
+
+    <!-- now the body of the work  -->
+
+
+    <div class="body">
+        <div class="overlap" id="overlap">
+            <div class="hello" id="helo">
+                <h1>Hello Christian,</h1>
+                <p>You are yet to complete your account registration, please update your company details to optimize
+                    your experience using your DHMS.</p>
+                <button onclick="close()">Remind Later</button>
+                <button>Update Profile</button>
+            </div>
+            <div class="device" id="device">
+                <button onclick="PageReset()"><i class="fa fa-times"></i></button>
+                <h2>Add New Device</h2>
+
+                <form action="">
+                    <select name="device_kind" id="">
+                        <option value="">Select device kind</option>
+                        <option value="">Laptop</option>
+                        <option value="">Desktop</option>
+                        <option value="">Printer</option>
+                        <option value="">Scanner</option>
+                    </select><br>
+                    <select name="department" id="">
+                        <option value="">Select department</option>
+                        <option value="">ICT</option>
+                        <option value="">Human resources</option>
+                        <option value="">Administrative</option>
+                        <option value="">Technical</option>
+                        <option value="">Marketing</option>
+                        <option value="">Customer service</option>
+                        <option value="">Accounting</option>
+                    </select><br>
+                    <input type="text" name="" id="" placeholder="Enter device brand (eg: HP, Dell)"><br>
+                    <input type="text" name="" id="" placeholder="Enter device operating system"><br>
+                    <input type="text" name="" id="" placeholder="Enter device cost of purchase"><br>
+                    <input type="text" name="" id="" placeholder="Enter device year of purchase"><br>
+                    <input type="text" name="" id="" placeholder="Enter device name"><br>
+                    <input type="text" name="" id="" placeholder="Enter Mac address"><br>
+                    <input type="text" name="" id="" placeholder="Enter device IP address"><br>
+                    <select name="department" id="">
+                        <option value="">Select device working condition</option>
+                        <option value="">Working</option>
+                        <option value="">Faulty</option>
+                        <option value="">Critical</option>
+                    </select><br>
+                    <input type="text" name="" id="" placeholder="Enter device location"><br><br>
+                    <label for="">Assign Device An Existing Staff Member To This Device(optional)</label><br>
+                    <select name="department" id="">
+                        <option value="">Select a staff member</option>
+                        <option value="">Working</option>
+                        <option value="">Faulty</option>
+                        <option value="">Critical</option>
+                    </select><br>
+                    <button>+ Add Device</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+        <h1>Good Afternoon Christian,</h1>
+        <button class="add" onclick="AddDevice()"> + Add Device</button>
+        <p>Get an overview of your devices health and status.</p>
+
+        <div class="list">
+            <nav>
+                <img src="./image/Group 126765.svg" alt="">
+                <h4>1</h4>
+                <span>Devices</span>
+            </nav>
+            <nav>
+                <img src="./image/Group 126765 (1).svg" alt="">
+                <h4>0</h4>
+                <span>Staff Members</span>
+            </nav>
+            <nav>
+                <img src="./image/Group 126765 (2).svg" alt="">
+                <h4>0</h4>
+                <span>Department</span>
+            </nav>
+            <nav>
+                <img src="./image/Group 126765 (3).svg" alt="">
+                <h4>0</h4>
+                <span>Faulty Devices</span>
+            </nav>
+            <nav>
+                <img src="./image/Group 126765 (4).svg" alt="">
+                <h4>1</h4>
+                <span>Health Device</span>
+            </nav>
+            <nav>
+                <img src="./image/Group 126765 (5).svg" alt="">
+                <h4>0</h4>
+                <span>Maintenance</span>
+            </nav>
+        </div>
+
+
+        <div class="about1">
+            <h3>Faulty Device Trends</h3><br>
+            <button>2024 <i class="fa fa-angle-down"></i></button><br>
+            <p>Gain insights on expanses made on devices or hardware over time.</p><br>
+            <!-- <div> -->
+            <div class="chart">
+                <img src="./image/Group 1000002328.svg" alt="">
+            </div>
+            <!-- </div> -->
+        </div>
+
+
+        <div class="about2">
+            <h3>Device Category</h3>
+            <button>See all</button>
+            <div class="content">
+                <span><img src="./image/Ellipse 901.svg" alt=""></span>
+            </div>
+            <nav>
+                <button>
+                    <h5></h5>1 Laptop
+                </button>
+                <button>
+                    <h5 class="desk"></h5>0 Desktop
+                </button>
+            </nav>
+        </div>
+
+
+        <div class="about2">
+            <h3>Maintenance Requests</h3>
+            <button>See all</button>
+            <div class="content">
+                <span>No Device Found</span>
+            </div>
+        </div>
+
+
+
+        <!-- another div at the left hand side  -->
+
+
+        <div class="about1">
+            <h3>Device Inventory</h3><br>
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Mac ID</th>
+                            <th>User</th>
+                            <th>DDR</th>
+                            <th>status</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>22:33:44</td>
+                            <td>Christian</td>
+                            <td>100%</td>
+                            <td>working </td>
+                            <td>IT</td>
+                        </tr>
+                </table>
+
+
+                <!-- <div class="image">
+                    <img src="./image/emptydevinv 1 (1).svg" alt="">
+                </div>
+                <div class="content">
+                    <h3>No device added</h3>
+                    <p>You have no device in your inventory. Add new devices with the Add Device button, or upload a
+                        CSV file.</p>
+                    <button>Upload CSV File</button>
+                    <button>+ Add Device</button>
+                </div> -->
+            </div>
+
+        </div>
+
+
+        <div class="about2">
+            <h3>Staff Members</h3>
+            <button>See all</button>
+            <div class="content">
+                <span>No staff member added yet</span>
+            </div>
+
+        </div>
+
+
+        <div class="about2">
+            <h3>Sub Admins</h3>
+            <button>See all</button>
+            <div class="content">
+                <span>No sub admin added yet</span>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function PageReset() {
+        const addlayer = document.getElementById("overlap");
+        const adddevice = document.getElementById("device");
+
+        addlayer.style.display = "none";
+        adddevice.style.display = "none";
+    }
+    function AddDevice() {
+        const addlayers = document.getElementById("overlap");
+        const adddevice = document.getElementById("device");
+
+        addlayers.style.display = "block";
+        adddevice.style.display = "block";
+    }
+    function close() {
+        const addlayers = document.getElementById("overlap");
+        const hellouser = document.getElementById("helo");
+
+        addlayers.style.display = "block";
+        hellouser.style.display = "block";
+    }
+
+
+</script>

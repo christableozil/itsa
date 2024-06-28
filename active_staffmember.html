@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./active_staffmember.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <header>
+        <img src="./image/Frame 854.png" alt="">
+        <input type="text" name="text" id="" placeholder="Search">
+        <nav class="container">
+            <nav class="image"><img src="./image/Ellipse 200.png" alt=""></nav>
+            <nav class="content">
+                <h4>Christian<br>
+                    <span>Admin</span>
+                </h4>
+            </nav>
+            <button>
+                <i class="fa fa-angle-down"></i>
+            </button>
+        </nav>
+        <button class="notice">
+            <i class="fa fa-bell-o">
+            </i></button>
+        <button class="AI">
+            <img src="./image/eos-icons_ai.png" alt="">
+            <span> Ask Our Ai</span>
+        </button>
+    </header>
+
+     <!-- menu left hand side  -->
+
+
+
+     <div class="menu">
+        <li><a href="./end_dashboard.html"><button><i class="fa fa-th-large"></i> Dashboard</button></a></li>
+        <li ><a href="./dash_device_inventory.html"><button><i class="fa fa-arrow-circle-o-up"></i> Device Inventory</button></a></li>
+        <li class="active"><a href="./staff_members.html"><button><i class="fa fa-user"></i> Staff Members</button></a></li>
+        <li><a href="./subadmin.html"><button><i class="fa fa-user-md"></i> Sub Admin</button></a></li>
+        <li><a href="./dash_report.html"><button><i class="fa fa-bar-chart"></i> Reports</button></a></li>
+        <li><a href=""><button><i class="fa fa-cog"></i> Settings</button></a></li>
+        <li ><a href="./dash_help.html"><button><i class="fa fa-question-circle"></i> Help & Support</button></a></li>
+        <li><a href="./maintenance.html"><button><i class="fa fa-sliders"></i>Maintenance</button></a></li>
+        <li><button><i class="fa fa-toggle-off"></i> Light Mode</button></li>
+        <li><a href="./index.html"><button><i class="fa fa-sign-out"></i> Log Out</button></a></li>
+    </div>
+
+
+
+
+    <!-- now the body of the work  -->
+
+
+    <div class="body">
+        <div class="overlap" id="overlap">
+        <div class="device" id="device">
+            <button onclick="PageReset()"><i class="fa fa-times"></i></button>
+            <h2>Add New Device</h2>
+            
+            <form action="./active_staffmember.html" method="post">
+                <input type="text" name="" id="" placeholder="Staff first name"><br>
+                <input type="text" name="" id="" placeholder="Staff last name"><br>
+                <input type="text" name="" id="" placeholder="Staff official email address"><br>
+                <select name="department" id="">
+                    <option value="">Select staff's department</option>
+                    <option value="">ICT</option>
+                    <option value="">Human resources</option>
+                    <option value="">Administrative</option>
+                    <option value="">Technical</option>
+                    <option value="">Marketing</option>
+                    <option value="">Customer service</option>
+                    <option value="">Accounting</option>
+                </select><br>
+                <input type="text" name="" id="" placeholder="Staff official phone number"><br>
+                <input type="text" name="" id="" placeholder="Staff location"><br>
+                <button >+ Add Device</button>
+            </form>
+        </div>
+
+</div>
+
+        <h1>Staff Members</h1>
+        <button class="number">1</button>
+        <button class="add" onclick="AddDevice()"> + Add Staff</button>
+        <button class="staff"><img src="./image/logos_microsoft-icon (1).svg" alt="">Activate AD SSO For Staff Members</button>
+        <p>Manage all staff members and their assigned devices.</p>
+
+         <!-- the div below show empty box -->
+
+         <div class="about1">
+            
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Staff Name</th>
+                            <th>Contact Number</th>
+                            <th>Email Address</th>
+                            <th>Staff unique ID</th>
+                            <th>Staff Unit</th>
+                            <th>Device ID</th>
+                            <th>Staff Availablity</th>
+                            <th>Action</th>
+                            <th>More info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Christian Okoye</td>
+                            <td>09012503350</td>
+                            <td>Chi@gmail.com</td>
+                            <td>click to copy ID</td>
+                            <td>IT</td>
+                            <td></td>
+                            <td class="red">Offline</td>
+                            <td></td>
+                            <td class="button">More Details</td>
+                        </tr>
+                </table>
+
+
+                <!-- <div class="image">
+                    <img src="./image/undraw_team_spirit_re_yl1v 1 (2).svg" alt="">
+                </div>
+                <div class="content">
+                    <h3>No staff members added yet? </h3>
+                    <p>Add your first staff member.</p>
+                        
+                        <button>Add Staff</button>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function PageReset(){
+       const addlayer = document.getElementById("overlap");
+       const adddevice = document.getElementById("device");
+     
+       addlayer.style.display = "none";
+       adddevice.style.display = "none";
+     }
+   function AddDevice() {
+       const addlayers = document.getElementById("overlap");
+       const adddevice = document.getElementById("device");
+       
+       addlayers.style.display = "block";
+       adddevice.style.display = "block";
+   }
+   function close(){
+       const addlayers = document.getElementById("overlap");
+       const hellouser = document.getElementById("helo");
+       
+       addlayers.style.display = "block";
+       hellouser.style.display = "block";
+   }
+     
+    
+</script>
